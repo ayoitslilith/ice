@@ -8,6 +8,7 @@ module Test
     const long C4 = 0x80000001;
     const float C5 = 1.1;
     const long C6 = 2;
+<<<<<<< HEAD
         
     enum E { e1, e2, e3 = 4 }
     enum Ebis { e2 }
@@ -15,19 +16,54 @@ module Test
         
     class C;
         
+=======
+<<<<<<< Updated upstream
+    enum E { e1, e2, e3 = 4 }
+    enum Ebis { e2 }
+    enum Eter { e2 }
+    class C;
+
+=======
+
+    enum E { e1, e2, e3 = 4 }
+    enum Ebis { e2 }
+    enum Eter { e2 }
+
+    class C;
+
+>>>>>>> Stashed changes
+>>>>>>> 5ab9b67d67d9af9e590bc25ecd7604eaf455ede0
     struct ClassWrapper
     {
         C c;
     }
+<<<<<<< HEAD
         
     interface I {}
         
+=======
+<<<<<<< Updated upstream
+    interface I {}
+=======
+
+    interface I {}
+
+>>>>>>> Stashed changes
+>>>>>>> 5ab9b67d67d9af9e590bc25ecd7604eaf455ede0
     sequence<bool> BoolSeq;
     sequence<C> ClassSeq;
     sequence<ClassWrapper> ClassWrapperSeq;
     dictionary<int, bool> BoolDict;
     dictionary<int, C> ClassDict;
+<<<<<<< HEAD
         
+=======
+<<<<<<< Updated upstream
+
+=======
+
+>>>>>>> Stashed changes
+>>>>>>> 5ab9b67d67d9af9e590bc25ecd7604eaf455ede0
     class C
     {
         optional string m1;             // missing tag
@@ -47,17 +83,41 @@ module Test
         optional(e3) int m15;           // ok
         optional(4) int m16;            // duplicate tag
     }
+<<<<<<< HEAD
         
+=======
+<<<<<<< Updated upstream
+
+=======
+
+>>>>>>> Stashed changes
+>>>>>>> 5ab9b67d67d9af9e590bc25ecd7604eaf455ede0
     class Base
     {
         optional(E::e2) int b1;
     }
+<<<<<<< HEAD
         
+=======
+<<<<<<< Updated upstream
+
+=======
+
+>>>>>>> Stashed changes
+>>>>>>> 5ab9b67d67d9af9e590bc25ecd7604eaf455ede0
     class Derived extends Base
     {
         optional(1) int d1;
     }
+<<<<<<< HEAD
         
+=======
+<<<<<<< Updated upstream
+
+=======
+
+>>>>>>> Stashed changes
+>>>>>>> 5ab9b67d67d9af9e590bc25ecd7604eaf455ede0
     class Ex
     {
         optional string m1;             // missing tag
@@ -77,23 +137,55 @@ module Test
         optional(e3) int m15;           // ok
         optional(4) int m16;            // duplicate tag
     }
+<<<<<<< HEAD
         
+=======
+<<<<<<< Updated upstream
+
+=======
+
+>>>>>>> Stashed changes
+>>>>>>> 5ab9b67d67d9af9e590bc25ecd7604eaf455ede0
     class BaseEx
     {
         optional(E::e2) int b1;
     }
+<<<<<<< HEAD
         
+=======
+<<<<<<< Updated upstream
+
+=======
+
+>>>>>>> Stashed changes
+>>>>>>> 5ab9b67d67d9af9e590bc25ecd7604eaf455ede0
     class DerivedEx extends BaseEx
     {
         optional(1) int d1;
     }
+<<<<<<< HEAD
         
+=======
+<<<<<<< Updated upstream
+
+=======
+
+>>>>>>> Stashed changes
+>>>>>>> 5ab9b67d67d9af9e590bc25ecd7604eaf455ede0
     struct S
     {
         optional(1) int m1;             // not allowed in struct
         optional(2) int m2 = 2;         // not allowed in struct
     }
+<<<<<<< HEAD
         
+=======
+<<<<<<< Updated upstream
+
+=======
+
+>>>>>>> Stashed changes
+>>>>>>> 5ab9b67d67d9af9e590bc25ecd7604eaf455ede0
     class D
     {
         optional(1) bool m1;            // ok
@@ -102,12 +194,28 @@ module Test
         optional(4) Object m4;          // cannot tag class types
         optional(5) Object* m5;         // ok
         optional(6) Value m6;           // cannot tag class types
+<<<<<<< HEAD
             
+=======
+<<<<<<< Updated upstream
+
+=======
+
+>>>>>>> Stashed changes
+>>>>>>> 5ab9b67d67d9af9e590bc25ecd7604eaf455ede0
         optional(7) C m7;               // cannot tag class types
         optional(8) I* m8;              // ok
         optional(9) S m9;               // ok
         optional(10) E m10;             // ok
+<<<<<<< HEAD
             
+=======
+<<<<<<< Updated upstream
+
+=======
+
+>>>>>>> Stashed changes
+>>>>>>> 5ab9b67d67d9af9e590bc25ecd7604eaf455ede0
         optional(11) BoolSeq m11;       // ok
         optional(12) ClassSeq m12;      // cannot tag class types
         optional(13) ClassWrapper m13;  // cannot tag class types

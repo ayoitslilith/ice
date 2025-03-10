@@ -7,12 +7,27 @@
 module Test
 {
     enum Color { red, green, blue }
+<<<<<<< HEAD
         
+=======
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
+>>>>>>> 5ab9b67d67d9af9e590bc25ecd7604eaf455ede0
     module Nested
     {
         enum Color { red, green, blue }
     }
+<<<<<<< HEAD
         
+=======
+<<<<<<< Updated upstream
+
+=======
+
+>>>>>>> Stashed changes
+>>>>>>> 5ab9b67d67d9af9e590bc25ecd7604eaf455ede0
     struct Struct1
     {
         bool boolFalse = false;
@@ -38,7 +53,15 @@ module Test
         double zeroD = 0;
         double zeroDotD = 0;
     }
+<<<<<<< HEAD
         
+=======
+<<<<<<< Updated upstream
+
+=======
+
+>>>>>>> Stashed changes
+>>>>>>> 5ab9b67d67d9af9e590bc25ecd7604eaf455ede0
     const bool ConstBool = true;
     const byte ConstByte = 254;
     const short ConstShort = 16000;
@@ -59,7 +82,15 @@ module Test
     const float ConstZeroDotF = 0.0;
     const double ConstZeroD = 0;
     const double ConstZeroDotD = 0;
+<<<<<<< HEAD
         
+=======
+<<<<<<< Updated upstream
+
+=======
+
+>>>>>>> Stashed changes
+>>>>>>> 5ab9b67d67d9af9e590bc25ecd7604eaf455ede0
     struct Struct2
     {
         bool boolTrue = ConstBool;
@@ -83,7 +114,15 @@ module Test
         double zeroD = ConstZeroD;
         double zeroDotD = ConstZeroDotD;
     }
+<<<<<<< HEAD
         
+=======
+<<<<<<< Updated upstream
+
+=======
+
+>>>>>>> Stashed changes
+>>>>>>> 5ab9b67d67d9af9e590bc25ecd7604eaf455ede0
     class Base
     {
         bool boolFalse = false;
@@ -103,7 +142,15 @@ module Test
         double zeroD = 0;
         double zeroDotD = 0;
     }
+<<<<<<< HEAD
         
+=======
+<<<<<<< Updated upstream
+
+=======
+
+>>>>>>> Stashed changes
+>>>>>>> 5ab9b67d67d9af9e590bc25ecd7604eaf455ede0
     class Derived extends Base
     {
         Color c1 = ::Test::Color::red;
@@ -113,7 +160,15 @@ module Test
         Nested::Color nc2 = Nested::green;
         Nested::Color nc3 = blue;
     }
+<<<<<<< HEAD
         
+=======
+<<<<<<< Updated upstream
+
+=======
+
+>>>>>>> Stashed changes
+>>>>>>> 5ab9b67d67d9af9e590bc25ecd7604eaf455ede0
     exception BaseEx
     {
         bool boolFalse = false;
@@ -133,7 +188,15 @@ module Test
         double zeroD = 0;
         double zeroDotD = 0;
     }
+<<<<<<< HEAD
         
+=======
+<<<<<<< Updated upstream
+
+=======
+
+>>>>>>> Stashed changes
+>>>>>>> 5ab9b67d67d9af9e590bc25ecd7604eaf455ede0
     exception DerivedEx extends BaseEx
     {
         Color c1 = ConstColor1;
@@ -143,16 +206,40 @@ module Test
         Nested::Color nc2 = ConstNestedColor2;
         Nested::Color nc3 = ConstNestedColor3;
     }
+<<<<<<< HEAD
         
     sequence<byte> ByteSeq;
     sequence<int> IntSeq;
     dictionary<int, string> IntStringDict;
         
+=======
+<<<<<<< Updated upstream
+
+    sequence<byte> ByteSeq;
+    sequence<int> IntSeq;
+    dictionary<int, string> IntStringDict;
+
+=======
+
+    sequence<byte> ByteSeq;
+    sequence<int> IntSeq;
+    dictionary<int, string> IntStringDict;
+
+>>>>>>> Stashed changes
+>>>>>>> 5ab9b67d67d9af9e590bc25ecd7604eaf455ede0
     struct InnerStruct
     {
         int a;
     }
+<<<<<<< HEAD
         
+=======
+<<<<<<< Updated upstream
+
+=======
+
+>>>>>>> Stashed changes
+>>>>>>> 5ab9b67d67d9af9e590bc25ecd7604eaf455ede0
     struct StructNoDefaults
     {
         bool bo;
@@ -169,27 +256,59 @@ module Test
         IntStringDict dict;
         InnerStruct st;
     }
+<<<<<<< HEAD
         
+=======
+<<<<<<< Updated upstream
+
+=======
+
+>>>>>>> Stashed changes
+>>>>>>> 5ab9b67d67d9af9e590bc25ecd7604eaf455ede0
     exception ExceptionNoDefaultsBase
     {
         string str;
         Color c1;
         ByteSeq bs;
     }
+<<<<<<< HEAD
         
+=======
+<<<<<<< Updated upstream
+
+=======
+
+>>>>>>> Stashed changes
+>>>>>>> 5ab9b67d67d9af9e590bc25ecd7604eaf455ede0
     exception ExceptionNoDefaults extends ExceptionNoDefaultsBase
     {
         InnerStruct st;
         IntStringDict dict;
     }
+<<<<<<< HEAD
         
+=======
+<<<<<<< Updated upstream
+
+=======
+
+>>>>>>> Stashed changes
+>>>>>>> 5ab9b67d67d9af9e590bc25ecd7604eaf455ede0
     class ClassNoDefaultsBase
     {
         string str;
         Color c1;
         ByteSeq bs;
     }
+<<<<<<< HEAD
         
+=======
+<<<<<<< Updated upstream
+
+=======
+
+>>>>>>> Stashed changes
+>>>>>>> 5ab9b67d67d9af9e590bc25ecd7604eaf455ede0
     class ClassNoDefaults extends ClassNoDefaultsBase
     {
         InnerStruct st;

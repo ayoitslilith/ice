@@ -5,6 +5,7 @@ module Test
     interface Foo1;
     class Foo1;
     class Foo1 { string x; }
+<<<<<<< HEAD
         
     interface Foo2 { void op(); }
     class Foo2;
@@ -13,6 +14,25 @@ module Test
     interface Foo3;
     interface Foo3 { void op(); }
         
+=======
+<<<<<<< Updated upstream
+    interface Foo2 { void op(); }
+    class Foo2;
+
+    class Foo3;
+    interface Foo3;
+    interface Foo3 { void op(); }
+=======
+
+    interface Foo2 { void op(); }
+    class Foo2;
+
+    class Foo3;
+    interface Foo3;
+    interface Foo3 { void op(); }
+
+>>>>>>> Stashed changes
+>>>>>>> 5ab9b67d67d9af9e590bc25ecd7604eaf455ede0
     class Foo4 { long l; }
     interface Foo4;
 }

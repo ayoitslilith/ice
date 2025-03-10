@@ -8,32 +8,75 @@ module Test
     dictionary<int, long> d4;               // OK
     dictionary<long, long> d5;              // OK
     dictionary<string, long> d6;            // OK
+<<<<<<< HEAD
         
+=======
+<<<<<<< Updated upstream
+
+=======
+
+>>>>>>> Stashed changes
+>>>>>>> 5ab9b67d67d9af9e590bc25ecd7604eaf455ede0
     dictionary<float, long> b1;             // Bad
     dictionary<double, long> b2;            // Bad
     dictionary<Object, long> b3;            // Bad
     dictionary<Object*, long> b4;           // Bad
     // dictionary<LocalObject, long> b5;       // Bad
+<<<<<<< HEAD
         
     sequence<byte> s1;
     dictionary<s1, long> d7;                // Bad
         
+=======
+<<<<<<< Updated upstream
+
+    sequence<byte> s1;
+    dictionary<s1, long> d7;                // Bad
+
+=======
+
+    sequence<byte> s1;
+    dictionary<s1, long> d7;                // Bad
+
+>>>>>>> Stashed changes
+>>>>>>> 5ab9b67d67d9af9e590bc25ecd7604eaf455ede0
     struct st1
     {
         long x;
         long y;
     }
     dictionary<st1, long> d8;               // OK
+<<<<<<< HEAD
         
+=======
+<<<<<<< Updated upstream
+
+=======
+
+>>>>>>> Stashed changes
+>>>>>>> 5ab9b67d67d9af9e590bc25ecd7604eaf455ede0
     struct st2
     {
         long x;
         float y;
     }
     dictionary<st2, long> b8;               // Bad
+<<<<<<< HEAD
         
     enum e { e1, e2 }
     dictionary<e, long> d9;                 // OK
         
+=======
+<<<<<<< Updated upstream
+    enum e { e1, e2 }
+    dictionary<e, long> d9;                 // OK
+
+=======
+
+    enum e { e1, e2 }
+    dictionary<e, long> d9;                 // OK
+
+>>>>>>> Stashed changes
+>>>>>>> 5ab9b67d67d9af9e590bc25ecd7604eaf455ede0
     dictionary<d9, long> b9;                // Bad
 }

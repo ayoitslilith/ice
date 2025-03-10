@@ -25,7 +25,15 @@ module Test
         int x DEFAULT(10);
         int y DEFAULT(10);
     }
+<<<<<<< HEAD
         
+=======
+<<<<<<< Updated upstream
+
+=======
+
+>>>>>>> Stashed changes
+>>>>>>> 5ab9b67d67d9af9e590bc25ecd7604eaf455ede0
     //
     // This class is only defined when compiling with slice2cpp.
     //

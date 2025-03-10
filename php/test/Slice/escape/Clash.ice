@@ -14,14 +14,68 @@ module Clash
         void sync();
         void inS();
         void istr();
+<<<<<<< HEAD
             
         void op(string context, string current, string response, string ex, string sent, string cookie,
             string sync, string result, string istr, string ostr, optional(1) string proxy);
+=======
+<<<<<<< Updated upstream
+
+        void op(string context, string current, string response, string ex, string sent, string cookie,
+            string sync, string result, string istr, string ostr, optional(1) string proxy);
+        void opOut(out string context, out string current, out string response, out string ex,
+               out string sent, out string cookie, out string sync, out string result, out string istr,
+               out string ostr, out optional(1) string proxy);
+    }
+
+    class Cls
+    {
+        Intf* s;
+        string context;
+        int current;
+        short response;
+        string upCast;
+        int typeId;
+        short del;
+        optional(1) short cookie;
+        string ex;
+        int result;
+        string istr;
+        string ostr;
+        string inS;
+        string in;
+        string proxy;
+    }
+
+    struct St
+    {
+        string v;
+        short istr;
+        int ostr;
+        int rhs;
+        string other;
+    }
+
+    exception Ex
+    {
+        short istr;
+        int ostr;
+    }
+}
+=======
+
+        void op(string context, string current, string response, string ex, string sent, string cookie,
+            string sync, string result, string istr, string ostr, optional(1) string proxy);
+>>>>>>> 5ab9b67d67d9af9e590bc25ecd7604eaf455ede0
             void opOut(out string context, out string current, out string response, out string ex,
                 out string sent, out string cookie, out string sync, out string result, out string istr,
                 out string ostr, out optional(1) string proxy);
             }
+<<<<<<< HEAD
                 
+=======
+
+>>>>>>> 5ab9b67d67d9af9e590bc25ecd7604eaf455ede0
             class Cls
             {
                 Intf* s;
@@ -40,7 +94,11 @@ module Clash
                 string in;
                 string proxy;
             }
+<<<<<<< HEAD
                 
+=======
+
+>>>>>>> 5ab9b67d67d9af9e590bc25ecd7604eaf455ede0
             struct St
             {
                 string v;
@@ -49,10 +107,18 @@ module Clash
                 int rhs;
                 string other;
             }
+<<<<<<< HEAD
                 
+=======
+
+>>>>>>> 5ab9b67d67d9af9e590bc25ecd7604eaf455ede0
             exception Ex
             {
                 short istr;
                 int ostr;
             }
         }
+<<<<<<< HEAD
+=======
+>>>>>>> Stashed changes
+>>>>>>> 5ab9b67d67d9af9e590bc25ecd7604eaf455ede0

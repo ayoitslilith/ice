@@ -8,12 +8,27 @@
 module Test
 {
     enum Color { red, green, blue }
+<<<<<<< HEAD
         
+=======
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
+>>>>>>> 5ab9b67d67d9af9e590bc25ecd7604eaf455ede0
     module Nested
     {
         enum Color { red, green, blue }
     }
+<<<<<<< HEAD
         
+=======
+<<<<<<< Updated upstream
+
+=======
+
+>>>>>>> Stashed changes
+>>>>>>> 5ab9b67d67d9af9e590bc25ecd7604eaf455ede0
     //
     // Struct1 maps to a C# class because it contains string members.
     //
@@ -42,7 +57,15 @@ module Test
         double zeroD = 0;
         double zeroDotD = 0;
     }
+<<<<<<< HEAD
         
+=======
+<<<<<<< Updated upstream
+
+=======
+
+>>>>>>> Stashed changes
+>>>>>>> 5ab9b67d67d9af9e590bc25ecd7604eaf455ede0
     const bool ConstBool = true;
     const byte ConstByte = 254;
     const short ConstShort = 16000;
@@ -63,7 +86,15 @@ module Test
     const float ConstZeroDotF = 0.0;
     const double ConstZeroD = 0;
     const double ConstZeroDotD = 0;
+<<<<<<< HEAD
         
+=======
+<<<<<<< Updated upstream
+
+=======
+
+>>>>>>> Stashed changes
+>>>>>>> 5ab9b67d67d9af9e590bc25ecd7604eaf455ede0
     struct Struct2
     {
         bool boolTrue = ConstBool;
@@ -87,7 +118,15 @@ module Test
         double zeroD = ConstZeroD;
         double zeroDotD = ConstZeroDotD;
     }
+<<<<<<< HEAD
         
+=======
+<<<<<<< Updated upstream
+
+=======
+
+>>>>>>> Stashed changes
+>>>>>>> 5ab9b67d67d9af9e590bc25ecd7604eaf455ede0
     //
     // Struct3 would normally map to a C# struct because we have omitted
     // the string members, but we use metadata to force it to be mapped
@@ -119,7 +158,15 @@ module Test
         double zeroD = 0;
         double zeroDotD = 0;
     }
+<<<<<<< HEAD
         
+=======
+<<<<<<< Updated upstream
+
+=======
+
+>>>>>>> Stashed changes
+>>>>>>> 5ab9b67d67d9af9e590bc25ecd7604eaf455ede0
     //
     // Struct4 would normally map to a C# struct because we have omitted
     // the string members, and don't contains cs:class metadata, but as it
@@ -150,7 +197,15 @@ module Test
         double zeroD = 0;
         double zeroDotD = 0;
     }
+<<<<<<< HEAD
         
+=======
+<<<<<<< Updated upstream
+
+=======
+
+>>>>>>> Stashed changes
+>>>>>>> 5ab9b67d67d9af9e590bc25ecd7604eaf455ede0
     class Base
     {
         bool boolFalse = false;
@@ -170,18 +225,42 @@ module Test
         double zeroD = 0;
         double zeroDotD = 0;
     }
+<<<<<<< HEAD
         
+=======
+<<<<<<< Updated upstream
+
+=======
+
+>>>>>>> Stashed changes
+>>>>>>> 5ab9b67d67d9af9e590bc25ecd7604eaf455ede0
     class Derived extends Base
     {
         Color c1 = ::Test::Color::red;
         Color c2 = Test::green;
         Color c3 = blue;
+<<<<<<< HEAD
             
+=======
+<<<<<<< Updated upstream
+
+=======
+
+>>>>>>> Stashed changes
+>>>>>>> 5ab9b67d67d9af9e590bc25ecd7604eaf455ede0
         Nested::Color nc1 = ::Test::Nested::Color::red;
         Nested::Color nc2 = Nested::green;
         Nested::Color nc3 = blue;
     }
+<<<<<<< HEAD
         
+=======
+<<<<<<< Updated upstream
+
+=======
+
+>>>>>>> Stashed changes
+>>>>>>> 5ab9b67d67d9af9e590bc25ecd7604eaf455ede0
     exception BaseEx
     {
         bool boolFalse = false;
@@ -201,18 +280,42 @@ module Test
         double zeroD = 0;
         double zeroDotD = 0;
     }
+<<<<<<< HEAD
         
+=======
+<<<<<<< Updated upstream
+
+=======
+
+>>>>>>> Stashed changes
+>>>>>>> 5ab9b67d67d9af9e590bc25ecd7604eaf455ede0
     exception DerivedEx extends BaseEx
     {
         Color c1 = ConstColor1;
         Color c2 = ConstColor2;
         Color c3 = ConstColor3;
+<<<<<<< HEAD
             
+=======
+<<<<<<< Updated upstream
+
+=======
+
+>>>>>>> Stashed changes
+>>>>>>> 5ab9b67d67d9af9e590bc25ecd7604eaf455ede0
         Nested::Color nc1 = ConstNestedColor1;
         Nested::Color nc2 = ConstNestedColor2;
         Nested::Color nc3 = ConstNestedColor3;
     }
+<<<<<<< HEAD
         
+=======
+<<<<<<< Updated upstream
+
+=======
+
+>>>>>>> Stashed changes
+>>>>>>> 5ab9b67d67d9af9e590bc25ecd7604eaf455ede0
     ["cs:property"]
     class ClassProperty
     {
@@ -233,7 +336,15 @@ module Test
         double zeroD = 0;
         double zeroDotD = 0;
     }
+<<<<<<< HEAD
         
+=======
+<<<<<<< Updated upstream
+
+=======
+
+>>>>>>> Stashed changes
+>>>>>>> 5ab9b67d67d9af9e590bc25ecd7604eaf455ede0
     ["cs:property"]
     struct StructProperty
     {
@@ -254,7 +365,15 @@ module Test
         double zeroD = 0;
         double zeroDotD = 0;
     }
+<<<<<<< HEAD
         
+=======
+<<<<<<< Updated upstream
+
+=======
+
+>>>>>>> Stashed changes
+>>>>>>> 5ab9b67d67d9af9e590bc25ecd7604eaf455ede0
     ["cs:property"]
     exception ExceptionProperty
     {
@@ -275,21 +394,53 @@ module Test
         double zeroD = 0;
         double zeroDotD = 0;
     }
+<<<<<<< HEAD
         
     sequence<byte> ByteSeq;
     sequence<int> IntSeq;
     dictionary<int, string> IntStringDict;
         
+=======
+<<<<<<< Updated upstream
+
+    sequence<byte> ByteSeq;
+    sequence<int> IntSeq;
+    dictionary<int, string> IntStringDict;
+
+=======
+
+    sequence<byte> ByteSeq;
+    sequence<int> IntSeq;
+    dictionary<int, string> IntStringDict;
+
+>>>>>>> Stashed changes
+>>>>>>> 5ab9b67d67d9af9e590bc25ecd7604eaf455ede0
     struct InnerStruct
     {
         int a;
     }
+<<<<<<< HEAD
         
+=======
+<<<<<<< Updated upstream
+
+=======
+
+>>>>>>> Stashed changes
+>>>>>>> 5ab9b67d67d9af9e590bc25ecd7604eaf455ede0
     struct InnerStruct2
     {
         string a;
     }
+<<<<<<< HEAD
         
+=======
+<<<<<<< Updated upstream
+
+=======
+
+>>>>>>> Stashed changes
+>>>>>>> 5ab9b67d67d9af9e590bc25ecd7604eaf455ede0
     struct StructNoDefaults
     {
         bool bo;
@@ -307,28 +458,60 @@ module Test
         InnerStruct2 st2;
         IntStringDict dict;
     }
+<<<<<<< HEAD
         
+=======
+<<<<<<< Updated upstream
+
+=======
+
+>>>>>>> Stashed changes
+>>>>>>> 5ab9b67d67d9af9e590bc25ecd7604eaf455ede0
     exception ExceptionNoDefaultsBase
     {
         string str;
         Color c1;
         ByteSeq bs;
     }
+<<<<<<< HEAD
         
+=======
+<<<<<<< Updated upstream
+
+=======
+
+>>>>>>> Stashed changes
+>>>>>>> 5ab9b67d67d9af9e590bc25ecd7604eaf455ede0
     exception ExceptionNoDefaults extends ExceptionNoDefaultsBase
     {
         InnerStruct st;
         InnerStruct2 st2;
         IntStringDict dict;
     }
+<<<<<<< HEAD
         
+=======
+<<<<<<< Updated upstream
+
+=======
+
+>>>>>>> Stashed changes
+>>>>>>> 5ab9b67d67d9af9e590bc25ecd7604eaf455ede0
     class ClassNoDefaultsBase
     {
         string str;
         Color c1;
         ByteSeq bs;
     }
+<<<<<<< HEAD
         
+=======
+<<<<<<< Updated upstream
+
+=======
+
+>>>>>>> Stashed changes
+>>>>>>> 5ab9b67d67d9af9e590bc25ecd7604eaf455ede0
     class ClassNoDefaults extends ClassNoDefaultsBase
     {
         InnerStruct st;

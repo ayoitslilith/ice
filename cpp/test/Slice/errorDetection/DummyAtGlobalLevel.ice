@@ -14,7 +14,17 @@ struct S
 }
     
 dictionary<string, string> StringDict;
+<<<<<<< HEAD
     
 enum E { red }
     
+=======
+<<<<<<< Updated upstream
+enum E { red }
+=======
+
+enum E { red }
+
+>>>>>>> Stashed changes
+>>>>>>> 5ab9b67d67d9af9e590bc25ecd7604eaf455ede0
 const int x = 1;

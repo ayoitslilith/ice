@@ -40,9 +40,19 @@ module DeprecatedTest
     {
         void opInt(int i);
     }
+<<<<<<< HEAD
         
     ["deprecated"] enum MyEnum { A, B, C }
         
+=======
+<<<<<<< Updated upstream
+    ["deprecated"] enum MyEnum { A, B, C }
+=======
+
+    ["deprecated"] enum MyEnum { A, B, C }
+
+>>>>>>> Stashed changes
+>>>>>>> 5ab9b67d67d9af9e590bc25ecd7604eaf455ede0
     enum MyOtherEnum
     {
         A,

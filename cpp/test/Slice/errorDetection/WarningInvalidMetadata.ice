@@ -38,7 +38,15 @@ module Test
     // The 'cpp:header-ext' metadata cannot be used as local metadata. It also cannot take multiple arguments.
     ["cpp:header-ext:a, b, c"]
     sequence<byte> Blob;
+<<<<<<< HEAD
         
+=======
+<<<<<<< Updated upstream
+
+=======
+
+>>>>>>> Stashed changes
+>>>>>>> 5ab9b67d67d9af9e590bc25ecd7604eaf455ede0
     // Providing a message to 'deprecated' is optional, but it cannot be applied twice to the same thing.
     ["deprecated", "deprecated:do not use this"]
     class Container
@@ -46,20 +54,45 @@ module Test
         // Unknown local metadata is disallowed.
         ["unknown", "cpp:unknown", "bad:unknown"]
         bool b;
+<<<<<<< HEAD
             
         // Ignore metadata that has a valid language prefix, but that doesn't match the current compiler.
         ["php:unknown"]
         int i;
             
+=======
+<<<<<<< Updated upstream
+
+        // Ignore metadata that has a valid language prefix, but that doesn't match the current compiler.
+        ["php:unknown"]
+        int i;
+
+=======
+
+        // Ignore metadata that has a valid language prefix, but that doesn't match the current compiler.
+        ["php:unknown"]
+        int i;
+
+>>>>>>> Stashed changes
+>>>>>>> 5ab9b67d67d9af9e590bc25ecd7604eaf455ede0
         // Passing an argument to metadata that doesn't take arguments is disallowed.
         ["cpp:array:foo"]
         Blob blob;
     }
+<<<<<<< HEAD
         
+=======
+<<<<<<< Updated upstream
+
+=======
+
+>>>>>>> Stashed changes
+>>>>>>> 5ab9b67d67d9af9e590bc25ecd7604eaf455ede0
     interface I
     {
         ["cpp:type:std::list<std::string>"]
         void op1();
+<<<<<<< HEAD
             
         ["cpp:array"]
         void op2();
@@ -68,33 +101,87 @@ module Test
             
         void op4(["cpp:view-type:my_string"] string s);
             
+=======
+<<<<<<< Updated upstream
+
+        ["cpp:array"]
+        void op2();
+
+        void op3(["cpp:type:my_string"] string s);
+
+        void op4(["cpp:view-type:my_string"] string s);
+
+=======
+
+        ["cpp:array"]
+        void op2();
+
+        void op3(["cpp:type:my_string"] string s);
+
+        void op4(["cpp:view-type:my_string"] string s);
+
+>>>>>>> Stashed changes
+>>>>>>> 5ab9b67d67d9af9e590bc25ecd7604eaf455ede0
         // Certain metadata restrict what arguments are valid; 'something' is not a valid format.
         // It is also disallowed to pass multiple arguments to metadata which only expects one.
         // And this will also trigger a duplicate metadata warning. All 3 warnings should be emitted from this.
         ["format:something", "format:default, sliced"]
         void op5();
     }
+<<<<<<< HEAD
         
+=======
+<<<<<<< Updated upstream
+
+=======
+
+>>>>>>> Stashed changes
+>>>>>>> 5ab9b67d67d9af9e590bc25ecd7604eaf455ede0
     ["cpp:const"] ["cpp:ice_print"]
     struct S
     {
         int i;
     }
+<<<<<<< HEAD
         
+=======
+<<<<<<< Updated upstream
+
+=======
+
+>>>>>>> Stashed changes
+>>>>>>> 5ab9b67d67d9af9e590bc25ecd7604eaf455ede0
     ["cpp:virtual"]
     exception E
     {
     }
+<<<<<<< HEAD
         
+=======
+<<<<<<< Updated upstream
+
+=======
+
+>>>>>>> Stashed changes
+>>>>>>> 5ab9b67d67d9af9e590bc25ecd7604eaf455ede0
     ["bad", "cpp:nope", "java:bad"] // We skip metadata that has a valid (but inapplicable) language prefix.
     class C
     {
     }
+<<<<<<< HEAD
         
+=======
+<<<<<<< Updated upstream
+
+=======
+
+>>>>>>> Stashed changes
+>>>>>>> 5ab9b67d67d9af9e590bc25ecd7604eaf455ede0
     ["cpp98:foo", "cpp11:bar"] // We still warn for unknown language prefixes (cpp98 and cpp11 metadata were removed in 3.8)
     class P
     {
     }
+<<<<<<< HEAD
         
     // Metadata is shared between forward declarations and definitions.
     // We allow duplicate metadata, but require that that metadata must be identical.
@@ -102,11 +189,38 @@ module Test
     ["java:nonsense", "deprecated:hello", "amd"]
     interface K;
         
+=======
+<<<<<<< Updated upstream
+
+    // Metadata is shared between forward declarations and definitions.
+    // We allow duplicate metadata, but require that that metadata must be identical.
+
+    ["java:nonsense", "deprecated:hello", "amd"]
+    interface K;
+
+=======
+
+    // Metadata is shared between forward declarations and definitions.
+    // We allow duplicate metadata, but require that that metadata must be identical.
+
+    ["java:nonsense", "deprecated:hello", "amd"]
+    interface K;
+
+>>>>>>> Stashed changes
+>>>>>>> 5ab9b67d67d9af9e590bc25ecd7604eaf455ede0
     ["java:nonsense"] ["deprecated:goodbye"] ["amd"]
     interface K
     {
     }
+<<<<<<< HEAD
         
+=======
+<<<<<<< Updated upstream
+
+=======
+
+>>>>>>> Stashed changes
+>>>>>>> 5ab9b67d67d9af9e590bc25ecd7604eaf455ede0
     ["java:nonsense", "deprecated", "amd"]
     interface K;
 }

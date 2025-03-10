@@ -11,9 +11,19 @@ module Test
         void check();
         void shutdown();
     }
+<<<<<<< HEAD
         
     enum StateCode { Initial, Running, Finished }
         
+=======
+<<<<<<< Updated upstream
+    enum StateCode { Initial, Running, Finished }
+=======
+
+    enum StateCode { Initial, Running, Finished }
+
+>>>>>>> Stashed changes
+>>>>>>> 5ab9b67d67d9af9e590bc25ecd7604eaf455ede0
     struct TestToken
     {
         bool expectedResult;
@@ -23,7 +33,15 @@ module Test
         short caseIndex;
         string testReference;
     }
+<<<<<<< HEAD
         
+=======
+<<<<<<< Updated upstream
+
+=======
+
+>>>>>>> Stashed changes
+>>>>>>> 5ab9b67d67d9af9e590bc25ecd7604eaf455ede0
     /**
     *
     * The test controller interface permits coordination between the test
@@ -38,7 +56,15 @@ module Test
         void step(Glacier2::Session* currentSession, TestToken currentState, out TestToken newState);
         void shutdown();
     }
+<<<<<<< HEAD
         
+=======
+<<<<<<< Updated upstream
+
+=======
+
+>>>>>>> Stashed changes
+>>>>>>> 5ab9b67d67d9af9e590bc25ecd7604eaf455ede0
     interface TestSession extends Glacier2::Session
     {
         void shutdown();

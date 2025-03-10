@@ -11,9 +11,21 @@ module Test
     {
         void reply();
     }
+<<<<<<< HEAD
         
     sequence<byte> ByteSeq;
         
+=======
+<<<<<<< Updated upstream
+
+    sequence<byte> ByteSeq;
+
+=======
+
+    sequence<byte> ByteSeq;
+
+>>>>>>> Stashed changes
+>>>>>>> 5ab9b67d67d9af9e590bc25ecd7604eaf455ede0
     interface TestIntf
     {
         void ping(PingReply* reply);
